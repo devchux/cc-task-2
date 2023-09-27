@@ -1,5 +1,7 @@
 import Filters from "../features/filters";
 import Search from "../features/search";
+import Table from "../features/table";
+import TopNav from "../navigation/topnav";
 
 const Home = () => {
   return (
@@ -16,7 +18,12 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="md:w-[70%]"></div>
+      <div className="md:w-[70%]">
+        <TopNav />
+        <div className="mt-12">
+          <Table />
+        </div>
+      </div>
     </div>
   );
 };
