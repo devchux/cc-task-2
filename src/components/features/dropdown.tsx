@@ -65,10 +65,10 @@ const Dropdown = () => {
   return (
     <div
       ref={ref}
-      className="w-full max-w-xs shadow-[0px_4px_25px_0px_rgba(29,78,216,0.05)] relative"
+      className="w-full max-w-xs relative"
     >
       <div
-        className="bg-white flex items-center justify-between px-4 py-2 rounded-2xl cursor-pointer"
+        className="bg-white flex items-center justify-between px-4 py-2 rounded-2xl cursor-pointer shadow-[0px_4px_25px_0px_rgba(29,78,216,0.05)]"
         onClick={() => setIsOpen(!isOpen)}
       >
         <p className="font-medium text-persian-blue">{state.title}</p>
@@ -76,7 +76,7 @@ const Dropdown = () => {
       </div>
       <div
         className={cn(
-          "absolute left-0 w-full top-12 rounded-br-2xl rounded-bl-2xl overflow-hidden opacity-0 invisible transition-opacity duration-300",
+          "absolute left-0 w-full top-12 rounded-br-2xl rounded-bl-2xl overflow-hidden shadow-[0px_4px_25px_0px_rgba(29,78,216,0.05)] opacity-0 invisible transition-opacity duration-300",
           { "opacity-100 visible": isOpen }
         )}
       >
